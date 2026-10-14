@@ -1,0 +1,12 @@
+{
+  "departure_date": "2026-12-22",
+  "return_date": "2027-01-10",
+  "currency": "INR",
+  "target_price_inr": 18000,
+  "telegram_alerts": false,
+  "routes": [
+    {"origin": "IXC", "destination": "SHJ", "label": "Chandigarh → Sharjah"},
+    {"origin": "IXC", "destination": "DXB", "label": "Chandigarh → Dubai"},
+    {"origin": "ATQ", "destination": "SHJ", "label": "Amritsar → Sharjah"}
+  ]
+}
