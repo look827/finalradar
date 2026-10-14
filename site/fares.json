@@ -1,5 +1,5 @@
 {
-  "generated_at": null,
+  "generated_at": "2026-10-14T18:31:09+00:00",
   "config": {
     "departure_date": "2026-12-22",
     "return_date": "2027-01-10",
@@ -7,11 +7,72 @@
     "target_price_inr": 18000,
     "telegram_alerts": false,
     "routes": [
-      {"origin": "IXC", "destination": "SHJ", "label": "Chandigarh → Sharjah"},
-      {"origin": "IXC", "destination": "DXB", "label": "Chandigarh → Dubai"},
-      {"origin": "ATQ", "destination": "SHJ", "label": "Amritsar → Sharjah"}
+      {
+        "origin": "IXC",
+        "destination": "SHJ",
+        "label": "Chandigarh → Sharjah"
+      },
+      {
+        "origin": "IXC",
+        "destination": "DXB",
+        "label": "Chandigarh → Dubai"
+      },
+      {
+        "origin": "ATQ",
+        "destination": "SHJ",
+        "label": "Amritsar → Sharjah"
+      }
     ]
   },
-  "observations": [],
-  "runs": []
+  "observations": [
+    {
+      "id": 3,
+      "scanned_at": "2026-10-14T18:31:01+00:00",
+      "origin": "ATQ",
+      "destination": "SHJ",
+      "departure_date": "2026-12-22",
+      "return_date": "2027-01-10",
+      "currency": "INR",
+      "candidate_price": 80635,
+      "status": "needs_review",
+      "note": "Lowest visible INR-like amount; verify manually before relying on it",
+      "source_url": "https://www.google.com/travel/flights?q=Flights%20from%20ATQ%20to%20SHJ%20on%202026-12-22%20returning%202027-01-10&curr=INR&hl=en&gl=IN"
+    },
+    {
+      "id": 2,
+      "scanned_at": "2026-10-14T18:30:53+00:00",
+      "origin": "IXC",
+      "destination": "DXB",
+      "departure_date": "2026-12-22",
+      "return_date": "2027-01-10",
+      "currency": "INR",
+      "candidate_price": null,
+      "status": "no_inr_price_detected",
+      "note": "Page loaded but no INR-like amount was parsed",
+      "source_url": "https://www.google.com/travel/flights?q=Flights%20from%20IXC%20to%20DXB%20on%202026-12-22%20returning%202027-01-10&curr=INR&hl=en&gl=IN"
+    },
+    {
+      "id": 1,
+      "scanned_at": "2026-10-14T18:30:44+00:00",
+      "origin": "IXC",
+      "destination": "SHJ",
+      "departure_date": "2026-12-22",
+      "return_date": "2027-01-10",
+      "currency": "INR",
+      "candidate_price": 55419,
+      "status": "needs_review",
+      "note": "Lowest visible INR-like amount; verify manually before relying on it",
+      "source_url": "https://www.google.com/travel/flights?q=Flights%20from%20IXC%20to%20SHJ%20on%202026-12-22%20returning%202027-01-10&curr=INR&hl=en&gl=IN"
+    }
+  ],
+  "runs": [
+    {
+      "id": 1,
+      "started_at": "2026-10-14T18:30:43+00:00",
+      "finished_at": "2026-10-14T18:31:09+00:00",
+      "status": "completed",
+      "routes_attempted": 3,
+      "note": "IXC-SHJ:needs_review; IXC-DXB:no_inr_price_detected; ATQ-SHJ:needs_review"
+    }
+  ]
 }
