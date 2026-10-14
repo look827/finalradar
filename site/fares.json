@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T18:31:09+00:00",
+  "generated_at": "2026-10-14T22:20:20+00:00",
   "config": {
     "departure_date": "2026-12-22",
     "return_date": "2027-01-10",
@@ -25,6 +25,45 @@
     ]
   },
   "observations": [
+    {
+      "id": 6,
+      "scanned_at": "2026-10-14T22:20:12+00:00",
+      "origin": "ATQ",
+      "destination": "SHJ",
+      "departure_date": "2026-12-22",
+      "return_date": "2027-01-10",
+      "currency": "INR",
+      "candidate_price": 52009,
+      "status": "needs_review",
+      "note": "Lowest visible INR-like amount; verify manually before relying on it",
+      "source_url": "https://www.google.com/travel/flights?q=Flights%20from%20ATQ%20to%20SHJ%20on%202026-12-22%20returning%202027-01-10&curr=INR&hl=en&gl=IN"
+    },
+    {
+      "id": 5,
+      "scanned_at": "2026-10-14T22:20:04+00:00",
+      "origin": "IXC",
+      "destination": "DXB",
+      "departure_date": "2026-12-22",
+      "return_date": "2027-01-10",
+      "currency": "INR",
+      "candidate_price": 55419,
+      "status": "needs_review",
+      "note": "Lowest visible INR-like amount; verify manually before relying on it",
+      "source_url": "https://www.google.com/travel/flights?q=Flights%20from%20IXC%20to%20DXB%20on%202026-12-22%20returning%202027-01-10&curr=INR&hl=en&gl=IN"
+    },
+    {
+      "id": 4,
+      "scanned_at": "2026-10-14T22:19:55+00:00",
+      "origin": "IXC",
+      "destination": "SHJ",
+      "departure_date": "2026-12-22",
+      "return_date": "2027-01-10",
+      "currency": "INR",
+      "candidate_price": 55419,
+      "status": "needs_review",
+      "note": "Lowest visible INR-like amount; verify manually before relying on it",
+      "source_url": "https://www.google.com/travel/flights?q=Flights%20from%20IXC%20to%20SHJ%20on%202026-12-22%20returning%202027-01-10&curr=INR&hl=en&gl=IN"
+    },
     {
       "id": 3,
       "scanned_at": "2026-10-14T18:31:01+00:00",
@@ -66,6 +105,14 @@
     }
   ],
   "runs": [
+    {
+      "id": 2,
+      "started_at": "2026-10-14T22:19:55+00:00",
+      "finished_at": "2026-10-14T22:20:20+00:00",
+      "status": "completed",
+      "routes_attempted": 3,
+      "note": "IXC-SHJ:needs_review; IXC-DXB:needs_review; ATQ-SHJ:needs_review"
+    },
     {
       "id": 1,
       "started_at": "2026-10-14T18:30:43+00:00",
