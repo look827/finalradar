@@ -1,12 +1,34 @@
+
 {
-  "departure_date": "2026-12-22",
-  "return_date": "2027-01-10",
   "currency": "INR",
-  "target_price_inr": 18000,
-  "telegram_alerts": false,
+  "target_price": 18000,
+  "scan_interval_minutes": 60,
   "routes": [
-    {"origin": "IXC", "destination": "SHJ", "label": "Chandigarh → Sharjah"},
-    {"origin": "IXC", "destination": "DXB", "label": "Chandigarh → Dubai"},
-    {"origin": "ATQ", "destination": "SHJ", "label": "Amritsar → Sharjah"}
-  ]
+    {
+      "origin": "IXC",
+      "destination": "SHJ",
+      "departure_start": "2026-12-22",
+      "departure_end": "2027-01-10",
+      "trip_type": "one_way"
+    },
+    {
+      "origin": "IXC",
+      "destination": "DXB",
+      "departure_start": "2026-12-22",
+      "departure_end": "2027-01-10",
+      "trip_type": "one_way"
+    },
+    {
+      "origin": "ATQ",
+      "destination": "SHJ",
+      "departure_start": "2026-12-22",
+      "departure_end": "2027-01-10",
+      "trip_type": "one_way"
+    }
+  ],
+  "alerts": {
+    "enabled": true,
+    "telegram": true,
+    "notify_when_price_at_or_below_target": true
+  }
 }
