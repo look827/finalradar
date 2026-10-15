@@ -144,25 +144,28 @@ def collect_visible_text(page, url: str) -> tuple[str, str]:
 
 
 def candidate_inr(text: str) -> int | None:
-    """Extract the lowest visible INR-looking amount; unverified."""
+    """Extract explicitly INR-marked amounts only.
+    Still a candidate, not a verified flight fare.
+    """
     patterns = [
         r"₹\s*([0-9][0-9,]{2,})",
         r"INR\s*([0-9][0-9,]{2,})",
         r"Rs\.?\s*([0-9][0-9,]{2,})",
     ]
 
-    values: list[int] = []
+    values = set()
 
     for pattern in patterns:
         for raw in re.findall(pattern, text, flags=re.IGNORECASE):
             try:
                 value = int(raw.replace(",", ""))
                 if 1000 <= value <= 2000000:
-                    values.append(value)
+                    values.add(value)
             except ValueError:
                 continue
 
     return min(values) if values else None
+
 
 
 def send_telegram(message: str) -> bool:
